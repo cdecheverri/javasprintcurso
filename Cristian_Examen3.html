@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cristian_Examen3</title>
+</head>
+<body>
+<script>
+   var str1= '';
+   var str2= '';
+   var enumsuma = ' ';
+   var enummul = ' ';
+   const array1 = [3, 2, 1, 1, 2, 3, 2, 3, 1];
+   const array2 = [1, 1, 2, 2, 1, 1, 1, 2, 1];
+   str1 = array1;
+   str2 = array2;
+   console.log(str1);
+   console.log(str2);
+
+    for (let i = 0 ;i<9;i++){
+     strsum1 = array1[i];
+     strsum2 = array2[i];
+     suma = array1[i] + array2[i];
+     mul  = array1[i] * array2[i];
+     enumsuma =  array1[i] + " + "+ array2[i]+ " ="+ suma;
+     enummul =  array1[i] + " * "+ array2[i]+ " ="+ mul;
+     console.log(enumsuma);
+     console.log(enummul);
+    }
+</script>
+</body>
+</html>

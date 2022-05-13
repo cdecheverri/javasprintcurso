@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cristian_Examen1</title>
+</head>
+<body>
+<script>
+function CalculaSalario(h){
+    var horas;
+    var salario;
+    var SalarioExtra;
+    var extras = 0;
+    var mensaje1;
+    var mensaje2;
+    const SalExtra=350000;
+    const SalNormal=265000;
+      if(h>40){
+        extras = h-40;
+        SalarioExtra=extras*SalExtra;
+        salario= (h-40)*SalNormal;
+
+      }else{
+        salario=h*SalNormal;
+        SalarioExtra=0;
+
+      }
+        mensaje1="El total a pagar por horas laborales normal(40) hrs es de :"+salario;
+        mensaje2="El total a pagar por horas Extra " + extras +" hrs es de :"+SalarioExtra;
+   if(SalarioExtra==0){
+      mensaje2="No tuvo horas extras"
+   }
+
+
+      return {mensaje1,mensaje2 };
+ }
+
+  console.log(CalculaSalario(53));
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
